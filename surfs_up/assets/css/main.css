@@ -1,0 +1,63 @@
+html {
+  overflow: hidden !important;
+}
+body {
+		font-family: 'Open Sans', sans-serif;
+		padding: 1.1rem;
+	  }
+.weather-heading {
+ 		 font: sans-serif;
+		 font-weight:600;
+		 font-size: 2.7rem; 
+		 white-space:nowrap;
+}
+.weather-subheading {
+		 font: sans-serif;
+		 font-weight:600;
+		 font-size: 2.2rem; 
+         white-space:nowrap;
+}
+.weather-data {
+		 font: sans-serif;
+		 font-weight:500;
+		 font-size: 3.3rem; 
+		 white-space:nowrap;
+}
+.tide-heading {
+		 font: sans-serif;
+		 font-weight:600;
+		 font-size: 2.5rem; 
+		 
+}
+.tide-data {
+		 font: sans-serif;
+		 font-weight:500;
+		 font-size: 3.3rem; 
+		 white-space:nowrap;
+}
+
+.day {
+		background-size:cover;
+		color:black;
+}
+.night { 
+		background-size:cover;
+		color:white; 
+}
+.clock {
+color:white;
+text-shadow:4px;
+font-weight: 600;
+font-size: 50px;
+position: absolute; 
+right: 0px;
+bottom: 0px;
+margin:0.20%;
+}
+
+.logo-item {
+position: absolute;
+left: 0px;
+bottom: 0px;
+margin:0.40%;
+}

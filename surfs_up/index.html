@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Surfs Up!</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="assets/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="assets/css/weather-icons-wind.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6" id="location-header">
+                <h1 class="weather-heading" id="Location-Name"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col left-container" id="left-container">
+                <div class="row">
+                    <div class="col-12 card " style="background: rgba(255, 252, 252, 0.30);">
+                        <div class="card-body ml-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="weather-heading">Current Tide</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h1 class="tide-heading">Tide Height</h1>
+                                    <p class="tide-data">
+                                        <span id="tideHeight"></span>m
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="tide-heading">Tide</h1>
+                                    <p class="tide-data">
+                                        <span id="currentTide"></span><i></i>
+                                    </p>
+                                </div>
+                           		 <div class="col-4">
+                                    <h1 class="tide-heading">Time/Date</h1>
+                                    <p class="tide-data">
+                                        <span id="currentTimeDate"></span><i></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 card " style="background: rgba(255, 252, 252, 0.30); margin-top: 1rem;">
+                        <div class="card-body ml-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="weather-heading">Current Weather</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <h1 class="weather-subheading">Condition</h1>
+                                    <p class ="weather-data">
+                                        <span id="currentCondition"></span><i id="currentIcon"></i>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="weather-subheading" >Temperature</h1>
+                                    <p class ="weather-data">
+                                        <span id="outsideTemp"></span><i class="wi wi-celsius"></i>
+                                    </p>
+                                </div>
+                                <div class="col-4" id="UV">
+                                    <h1 class="weather-subheading" >UV Index </h1>
+                                    <p class ="weather-data">
+                                        <span id="currentUV"></span><i class="UVicon"></i>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="weather-subheading" >Humidity</h1>
+                                    <p class ="weather-data">
+                                        <span id="CurrentHumidity"></span><i class="wi wi-humidity wi-fw 1 "></i>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="weather-subheading" >Wind Direction</h1>
+                                    <p class ="weather-data">
+                                        <span id="windDirection"></span><i id="dIcon"></i>
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <h1 class="weather-subheading" >Wind Speed</h1>
+                                    <p class ="weather-data">
+                                        <span id="WindSpeed"></span>kph
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-gutter col-1" id="middle-gutter"></div>
+            <div class="col right-container" id="right-container">
+                <div class="row">
+                    <div class="col-12 card " style="background: rgba(255, 252, 252, 0.30);">
+                        <div class="card-body ml-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="tide-heading">Tidal Forecast</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div>
+        <img class="logo-item" src="assets/images/Lymlive_Media_on_Black.png" alt="Lymlive Media">
+    </div>
+    <div>
+        <div>
+            <h1 id="clock"></h1>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="../../data.json" charset="utf-8"></script>
+<script src="assets/js/main-dist.js" charset="utf-8"></script>
+
+
+</html>

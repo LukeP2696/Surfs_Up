@@ -1,0 +1,13 @@
+html {
+    background-color: black;
+    }
+    
+    body,div,p,h1 {
+    background-color: black;
+    color:black;
+    display:none;
+    }
+    
+h2 {
+color:white;
+}
